@@ -1,15 +1,24 @@
 import React from 'react'
 
+import '../App.css';
+
 function Nav(){
+    const sections = [
+        'Home',
+        'About',
+        'Menu',
+        'Reservations',
+        'Order Online',
+        'Login'
+    ]
     return(
-        <ul className='navBar'>
-            <li><a href='#' role='btnNav'>Home</a></li>
-            <li><a href='#' role='btnNav'>About</a></li>
-            <li><a href='#' role='btnNav'>Menu</a></li>
-            <li><a href='#' role='btnNav'>Reservations</a></li>
-            <li><a href='#' role='btnNav'>Order Online</a></li>
-            <li><a href='#' role='btnNav'>Login</a></li>
-        </ul>
+        <nav className='navBar'>
+            <ul>
+                {sections.map((section,idx)=>(
+                    <li key={idx}><a href='#' role='btnNav'>{section}</a></li>
+                ))}
+            </ul>
+        </nav>
     );
 }
 
