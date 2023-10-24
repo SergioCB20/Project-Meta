@@ -46,6 +46,16 @@ button{
   cursor: pointer;
 }
 
+input[type="submit"]{
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 20px 30px;
+  border: 1px solid var(--primary-color-2);;
+  background-color: var(--primary-color-2);
+  cursor: pointer;
+}
+
 button > *{
   color: #FFFFFF;
 }
@@ -216,4 +226,19 @@ footer{
   left:0;
   background-color: var(--footer-color);
   z-index: 0;
+}
+
+/*Form - Reservations*/
+
+form{
+  margin:50px 0;
+}
+
+label{
+  font-size: 24px;
+}
+
+input,select{
+  margin-bottom: 25px;
+  font-size: 16px;
 }
